@@ -1,0 +1,44 @@
+﻿@{
+    ViewData["Title"] = "Trang chủ";
+}
+
+<div class="text-center mt-5">
+    <h1 class="display-4 fw-bold text-primary text-uppercase">Hệ Thống Quản Lý Món Ăn</h1>
+    <p class="lead mt-3 fw-semibold">Đồ án Giữa kỳ - Sinh viên: Nguyễn Hoàng Phúc (BCS240037)</p>
+    <hr class="w-50 mx-auto mb-5" />
+
+    <div class="row justify-content-center">
+        <div class="col-md-4 mb-4">
+            <div class="card shadow border-success h-100">
+                <div class="card-body">
+                    <h1 class="display-4">📋</h1>
+                    <h4 class="card-title text-success mt-3">Quản Lý Danh Mục</h4>
+                    <p class="card-text text-muted">Thêm, sửa, xóa các loại thức ăn, nước uống.</p>
+                    <a asp-controller="DishCategory_BCS240037" asp-action="Index" class="btn btn-success mt-2">Truy cập ngay</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card shadow border-danger h-100">
+                <div class="card-body">
+                    <h1 class="display-4">🍔</h1>
+                    <h4 class="card-title text-danger mt-3">Quản Lý Thực Đơn</h4>
+                    <p class="card-text text-muted">Kiểm soát giá cả, thời gian và tìm kiếm món ăn.</p>
+                    <a asp-controller="Dish_BCS240037" asp-action="Index" class="btn btn-danger mt-2">Truy cập ngay</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card shadow border-warning h-100">
+                <div class="card-body">
+                    <h1 class="display-4">🖼️</h1>
+                    <h4 class="card-title text-warning mt-3">Quản Lý Hình Ảnh</h4>
+                    <p class="card-text text-muted">Cập nhật ảnh đại diện và bộ sưu tập cho món ăn.</p>
+                    <a asp-controller="DishImage_BCS240037" asp-action="Index" class="btn btn-warning mt-2">Truy cập ngay</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
